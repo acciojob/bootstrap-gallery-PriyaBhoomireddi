@@ -28,6 +28,27 @@
     .card:hover .card-link {
       opacity: 1;
     }
+	  #lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+#lightbox.hidden {
+  display: none;
+}
+
+#lightbox-img {
+  max-width: 90%;
+  max-height: 90%;
+}
   </style>
 </head>
 <body>
@@ -38,8 +59,10 @@
       <div class="col-md-4 mb-3">
         <div class="card rounded">
           <a href="https://storage.googleapis.com/acciojob-open-file-collections/image1.jpg" class="card-link">
-            <img src="https://storage.googleapis.com/acciojob-open-file-collections/image1.jpg" class="card-img-top" alt="Image Description 1">
-          </a>
+           <div id="lightbox" class="hidden">
+			  <img id="light-box-img" src="https://storage.googleapis.com/acciojob-open-file-collections/image1.jpg" class="card-img-top" alt="Image Description 1">
+		   </div>
+		  </a>
           <div class="card-body text-center">
             <h6 class="card-title">Card Title 1</h6>
             <p class="card-text">Card Details 1</p>
@@ -50,8 +73,10 @@
       <div class="col-md-4 mb-3">
         <div class="card rounded">
           <a href="https://storage.googleapis.com/acciojob-open-file-collections/image2.jpg" class="card-link">
-            <img src="https://storage.googleapis.com/acciojob-open-file-collections/image2.jpg" class="card-img-top" alt="Image Description 2">
-          </a>
+            <div id="lightbox" class="hidden">
+			  <img id="light-box-img" src="https://storage.googleapis.com/acciojob-open-file-collections/image2.jpg" class="card-img-top" alt="Image Description 2">
+			</div>
+		  </a>
           <div class="card-body text-center">
             <h6 class="card-title">Card Title 2</h6>
             <p class="card-text">Card Details 2</p>
@@ -61,8 +86,10 @@
 		 <div class="col-md-4 mb-3">
         <div class="card rounded">
           <a href="https://storage.googleapis.com/acciojob-open-file-collections/image3.jpg" class="card-link">
-            <img src="https://storage.googleapis.com/acciojob-open-file-collections/image3.jpg" class="card-img-top" alt="Image Description 2">
-          </a>
+            <div id="lightbox" class="hidden">
+			  <img id="light-box-img" src="https://storage.googleapis.com/acciojob-open-file-collections/image3.jpg" class="card-img-top" alt="Image Description 2">
+			</div>
+		  </a>
           <div class="card-body text-center">
             <h6 class="card-title">Card Title 2</h6>
             <p class="card-text">Card Details 2</p>
@@ -72,8 +99,10 @@
 		 <div class="col-md-4 mb-3">
         <div class="card rounded">
           <a href="https://storage.googleapis.com/acciojob-open-file-collections/image4.jpg" class="card-link">
-            <img src="https://storage.googleapis.com/acciojob-open-file-collections/image4.jpg" class="card-img-top" alt="Image Description 2">
-          </a>
+            <div id="lightbox" class="hidden">
+			  <img id="light-box-img" src="https://storage.googleapis.com/acciojob-open-file-collections/image4.jpg" class="card-img-top" alt="Image Description 2">
+			</div>
+		  </a>
           <div class="card-body text-center">
             <h6 class="card-title">Card Title 2</h6>
             <p class="card-text">Card Details 2</p>
@@ -83,8 +112,10 @@
 		 <div class="col-md-4 mb-3">
         <div class="card rounded">
           <a href="https://storage.googleapis.com/acciojob-open-file-collections/image5.jpg" class="card-link">
-            <img src="https://storage.googleapis.com/acciojob-open-file-collections/image5.jpg" class="card-img-top" alt="Image Description 2">
-          </a>
+           <div id="lightbox" class="hidden">
+			  <img id="light-box-img" src="https://storage.googleapis.com/acciojob-open-file-collections/image5.jpg" class="card-img-top" alt="Image Description 2">
+		   </div>
+		  </a>
           <div class="card-body text-center">
             <h6 class="card-title">Card Title 2</h6>
             <p class="card-text">Card Details 2</p>
@@ -94,8 +125,10 @@
 		 <div class="col-md-4 mb-3">
         <div class="card rounded">
           <a href="https://storage.googleapis.com/acciojob-open-file-collections/image6.jpg" class="card-link">
-            <img src="https://storage.googleapis.com/acciojob-open-file-collections/image6.jpg" class="card-img-top" alt="Image Description 2">
-          </a>
+           <div id="lightbox" class="hidden">
+			  <img id="light-box-img" src="https://storage.googleapis.com/acciojob-open-file-collections/image6.jpg" class="card-img-top" alt="Image Description 2">
+		   </div>
+		  </a>
           <div class="card-body text-center">
             <h6 class="card-title">Card Title 2</h6>
             <p class="card-text">Card Details 2</p>
